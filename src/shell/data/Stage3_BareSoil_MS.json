@@ -1,0 +1,32 @@
+{
+    "BareSoil_Instruct_v10": {
+        "annotation": "baresoil/data/instruct/v1.0/hf_train",
+        "data_augment": false,
+        "repeat_time": 1,
+        "image_key": "tif_ms",
+        "conversation": "conversations",
+        "dynamic_image": true,
+        "bands": 12,
+        "normalization": "s2_l2a"
+    },
+    "BigEarthNet_BareSoil_MS": {
+        "annotation": "baresoil/data/external/BigEarthNet_bare_shard",
+        "data_augment": false,
+        "repeat_time": 1,
+        "image_key": "tif_ms",
+        "conversation": "conversations",
+        "dynamic_image": true,
+        "bands": 12,
+        "normalization": "s2_l2a"
+    },
+    "LCZ_BareSoil_MS": {
+        "annotation": "baresoil/data/external/LCZ_bare_shard",
+        "data_augment": false,
+        "repeat_time": 2,
+        "image_key": "tif_ms",
+        "conversation": "conversations",
+        "dynamic_image": true,
+        "bands": 10,
+        "normalization": "s2_norm"
+    }
+}

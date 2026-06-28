@@ -1,0 +1,30 @@
+{
+    "BareSoil_Instruct_v01": {
+        "annotation": "baresoil/data/instruct/v0.1/hf_train",
+        "data_augment": false,
+        "repeat_time": 2,
+        "image_key": "jpg",
+        "conversation": "conversations",
+        "dynamic_image": true,
+        "bands": 3
+    },
+    "AID_BareLand_RGB": {
+        "annotation": "baresoil/data/external/AID_bare_shard",
+        "data_augment": false,
+        "repeat_time": 3,
+        "image_key": "jpg",
+        "conversation": "conversations",
+        "dynamic_image": true,
+        "bands": 3
+    },
+    "LCZ_BareSoil_MS": {
+        "annotation": "baresoil/data/external/LCZ_bare_shard",
+        "data_augment": false,
+        "repeat_time": 2,
+        "image_key": "tif_ms",
+        "conversation": "conversations",
+        "dynamic_image": true,
+        "bands": 10,
+        "normalization": "s2_norm"
+    }
+}

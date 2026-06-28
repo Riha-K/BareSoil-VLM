@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "total": 63931,
+  "from_v01": 42431,
+  "bigearthnet_s2": 10500,
+  "copernicus_weak": 8000,
+  "temporal": 3000,
+  "train_path": "E:\\MTP\\papers\\EarthDial-main\\baresoil\\data\\instruct\\v1.0\\baresoil_instruct_v10_train.jsonl",
+  "note": "Replace placeholder_image entries with real shards when BigEarthNet/Copernicus rasters mounted."
+}

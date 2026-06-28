@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "inherits": "v0.1",
+  "v01_manifest": {
+    "version": "v0.1",
+    "tasks": [
+      "classification",
+      "vqa_presence",
+      "caption"
+    ],
+    "splits": {
+      "test": {
+        "classification": {
+          "count": 250,
+          "path": "E:\\MTP\\papers\\EarthDial-main\\baresoil\\data\\bench\\v0.1\\classification_test.jsonl"
+        },
+        "vqa_presence": {
+          "count": 94,
+          "path": "E:\\MTP\\papers\\EarthDial-main\\baresoil\\data\\bench\\v0.1\\vqa_presence_test.jsonl"
+        },
+        "caption": {
+          "count": 53,
+          "path": "E:\\MTP\\papers\\EarthDial-main\\baresoil\\data\\bench\\v0.1\\caption_test.jsonl"
+        }
+      }
+    },
+    "geographic_holdout": {
+      "policy": "LCZ/AID geographic shards held out when real coords available; current split uses random 15-20% from instruct builder.",
+      "aid_test_sources": [
+        "AID"
+      ],
+      "lcz_test_sources": [
+        "LCZ42"
+      ]
+    },
+    "unified_classes": [
+      "bare_soil",
+      "sparse_vegetation",
+      "desert_sand",
+      "bare_rock_paved",
+      "burnt_barren",
+      "agricultural_fallow",
+      "non_bare"
+    ],
+    "total_samples": 397
+  },
+  "additional_tasks": {
+    "temporal": "E:\\MTP\\papers\\EarthDial-main\\baresoil\\data\\bench\\v1.0\\temporal_test.jsonl",
+    "spectral_vqa": "E:\\MTP\\papers\\EarthDial-main\\baresoil\\data\\bench\\v1.0\\spectral_vqa_test.jsonl"
+  },
+  "tasks": [
+    "classification",
+    "vqa_presence",
+    "caption",
+    "grounding",
+    "temporal",
+    "spectral_vqa"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "description": "EarthDial baseline on bare-soil-related eval subsets",
+  "model": "EarthDial_4B (from existing eval JSONL)",
+  "subsets": {
+    "AID_bare_related": {
+      "count": 600,
+      "accuracy": 0.96,
+      "bare_binary_f1": 0.997,
+      "bare_binary_precision": 1.0,
+      "bare_binary_recall": 0.994,
+      "per_class_accuracy": {
+        "BareLand": 0.8172,
+        "Beach": 1.0,
+        "Desert": 0.9889,
+        "Farmland": 1.0,
+        "Meadow": 0.9286,
+        "Mountain": 1.0
+      },
+      "confusion_binary": {
+        "tp": 495,
+        "fp": 0,
+        "fn": 3,
+        "tn": 102
+      },
+      "full_dataset_accuracy": 0.8847,
+      "class_distribution": {
+        "Beach": 120,
+        "BareLand": 93,
+        "Desert": 90,
+        "Farmland": 111,
+        "Meadow": 84,
+        "Mountain": 102
+      }
+    },
+    "LCZ_bare_related": {
+      "count": 8673,
+      "accuracy": 0.6724,
+      "bare_binary_f1": 0.8121,
+      "bare_binary_precision": 0.9597,
+      "bare_binary_recall": 0.7039,
+      "per_class_accuracy": {
+        "Bare rock or paved": 0.0732,
+        "Bare soil or sand": 0.236,
+        "Heavy industry": 0.3546,
+        "Low plants": 0.7762,
+        "Sparsely built": 0.4734,
+        "Water": 0.9909
+      },
+      "confusion_binary": {
+        "tp": 2261,
+        "fp": 95,
+        "fn": 951,
+        "tn": 5366
+      },
+      "full_dataset_accuracy": 0.6801,
+      "class_distribution": {
+        "Heavy industry": 908,
+        "Water": 2540,
+        "Low plants": 2435,
+        "Bare soil or sand": 572,
+        "Sparsely built": 2013,
+        "Bare rock or paved": 205
+      }
+    },
+    "caption_bare_keyword": {
+      "RSICD_Captions": {
+        "bare_keyword_samples": 167,
+        "bare_term_in_prediction": 91,
+        "bare_term_rate": 0.5449
+      },
+      "RSITMD_Captions": {
+        "bare_keyword_samples": 54,
+        "bare_term_in_prediction": 32,
+        "bare_term_rate": 0.5926
+      },
+      "UCM_captions": {
+        "bare_keyword_samples": 14,
+        "bare_term_in_prediction": 9,
+        "bare_term_rate": 0.6429
+      }
+    }
+  },
+  "summary": {
+    "aid_bare_accuracy": 0.96,
+    "aid_bare_f1": 0.997,
+    "lcz_bare_accuracy": 0.6724,
+    "lcz_bare_f1": 0.8121,
+    "total_bare_eval_samples": 9273
+  }
+}

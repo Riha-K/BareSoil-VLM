@@ -1,0 +1,21 @@
+{
+  "bench_version": "v0.1",
+  "metrics": {
+    "classification": {
+      "count": 250,
+      "accuracy": 0.99,
+      "note": "mock +12% vs baseline for pipeline validation"
+    },
+    "vqa_presence": {
+      "count": 94,
+      "accuracy": 0.952,
+      "note": "mock +12% vs baseline for pipeline validation"
+    },
+    "caption": {
+      "count": 53,
+      "accuracy": 0.952,
+      "note": "mock +12% vs baseline for pipeline validation"
+    }
+  },
+  "target_met": false
+}

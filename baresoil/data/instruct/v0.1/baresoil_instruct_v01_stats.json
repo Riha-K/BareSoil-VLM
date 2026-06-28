@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "target_size": 50000,
+  "total": 50000,
+  "train": 42431,
+  "test": 7569,
+  "by_source": {
+    "LCZ42": 43724,
+    "AID": 6000,
+    "RSICD_Captions": 190,
+    "UCM_captions": 20,
+    "RSITMD_Captions": 66
+  },
+  "train_path": "E:\\MTP\\papers\\EarthDial-main\\baresoil\\data\\instruct\\v0.1\\baresoil_instruct_v01_train.jsonl",
+  "test_path": "E:\\MTP\\papers\\EarthDial-main\\baresoil\\data\\instruct\\v0.1\\baresoil_instruct_v01_test.jsonl"
+}

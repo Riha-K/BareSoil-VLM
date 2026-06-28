@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# ML / data
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+wandb/
+runs/
+tensorboard/
+
+# Large downloads (regenerate with scripts)
+src/earthdial/trainset/
+src/earthdial/eval/Eardial_downstream_task_datasets/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+*.log

@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Setup_Demo",
+        "bare_fraction": 0.34
+      },
+      "geometry": null
+    }
+  ]
+}

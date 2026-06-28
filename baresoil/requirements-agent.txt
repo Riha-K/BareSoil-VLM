@@ -1,0 +1,5 @@
+# Optional dependencies for BareSoil-Agent and data tooling
+pystac-client>=0.7.0
+planetary-computer>=1.0.0
+rasterio>=1.3.0
+geopandas>=0.14.0
